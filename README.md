@@ -113,4 +113,44 @@ Run 'docker COMMAND --help' for more information on a command.
 
 For more help on how to use Docker, head to https://docs.docker.com/go/guides/
 ```
+# get the system wide information
+```
+docker info
+```
+# docker search
+docker search CLI used for public docker images search in Docker hub
+referenece : https://docs.docker.com/engine/reference/commandline/search/
+```
+docker search busybox
+```
+# docker login
+docker login used for to login to private or public docker registry
+references : https://docs.docker.com/engine/reference/commandline/login/
+This command is used to login to private or self-hosted docker registry
+```
+docker login localhost:8080
+```
+This command is used to login to public docker registry(docker hub)
+```
+docker login
+```
+# docker logout
+logout from the registry
+This command is used to logout to private or self-hosted docker registry
+```
+docker logout localhost:8080
+```
+This command is used to login to public docker registry(docker hub)
+```
+docker logout
+```
+# docker images
+List the docker images
+reference: https://docs.docker.com/engine/reference/commandline/images/
+
+# docker push
+# docker pull
+# docker ps
+# docker exec
+# docker run
 
