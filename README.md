@@ -147,8 +147,24 @@ docker logout
 # docker images
 List the docker images
 reference: https://docs.docker.com/engine/reference/commandline/images/
+```
+docker images
+```
+# docker RUN PORT mapping
+Referenes: https://docs.docker.com/network/
+docker run -p <<host port/custom port>>:<<container port>>
+```
+docker run -p **127.0.0.1:8000:8000** varrrive/python-hello-app:latest
+```
+# docker RUN VOLUME mapping
+https://docs.docker.com/storage/volumes/
+docker run -v <<host port/custom port>>:<<container port>>
+```
+docker run -v /opt/datadir:var/lib/python varrrive/python-hello-app:latest
+```
 
 # docker push
+
 # docker pull
 # docker ps
 # docker exec
